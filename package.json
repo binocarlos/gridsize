@@ -1,0 +1,30 @@
+{
+  "name": "gridsize",
+  "version": "0.0.1",
+  "description": "Input a number N and get a {width:X,height:X} object for a grid with at least N cells",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/binocarlos/gridsize.git"
+  },
+  "keywords": [
+    "grid",
+    "cells",
+    "size"
+  ],
+  "author": "Kai Davenport",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/binocarlos/gridsize/issues"
+  },
+  "devDependencies": {
+    "mocha": "~1.14.0",
+    "should": "~2.1.0"
+  }
+}
