@@ -21,6 +21,8 @@ module.exports = function(count, landscape){
 		}
 	}
 
+  landscape = landscape ? true : false;
+
   var base = Math.floor(Math.sqrt(count));
 
   var size = {
@@ -35,6 +37,7 @@ module.exports = function(count, landscape){
   	else{
   		size.height++;
   	}
+    landscape = !landscape;
   }
 
   return size;

@@ -26,7 +26,6 @@ describe('gridsize', function(){
 	})
 
 	it('should cope with no params', function() {
-		// should be 5x4
 		var grid = gridsize();
 
 		grid.width.should.equal(0);
@@ -34,4 +33,25 @@ describe('gridsize', function(){
 	})
 
 	
+	it('should alternate adding sizes', function() {
+		// should be 4x5
+		var grid1 = gridsize(19);
+
+		grid1.width.should.equal(4);
+		grid1.height.should.equal(5);
+
+		// should be 5x5
+		var grid2 = gridsize(21);
+
+		grid2.width.should.equal(5);
+		grid2.height.should.equal(5);
+
+		// should be 5x6
+		var grid3 = gridsize(26);
+
+		grid3.width.should.equal(5);
+		grid3.height.should.equal(6);
+
+		
+	})
 })
