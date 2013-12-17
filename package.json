@@ -1,6 +1,6 @@
 {
   "name": "gridsize",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Input a number N and get a {width:X,height:X} object for a grid with at least N cells",
   "main": "src/index.js",
   "directories": {
